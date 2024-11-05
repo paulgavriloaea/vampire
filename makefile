@@ -5,7 +5,7 @@
 #===================================================================
 
 # Specify compiler for MPI compilation with openmpi
-export OMPI_CXX=g++ -std=c++0x
+export OMPI_CXX=g++-14 -std=c++0x
 
 #export OMPI_CXX=icc
 #export OMPI_CXX=pathCC
@@ -14,8 +14,8 @@ export OMPI_CXX=g++ -std=c++0x
 #export MPICH_CXX=bgxlc++
 # Compilers
 ICC=icc -std=c++0x -DCOMP='"Intel C++ Compiler"'
-GCC=g++ -std=c++0x -DCOMP='"GNU C++ Compiler"'
-LLVM=g++ -DCOMP='"LLVM C++ Compiler"'
+GCC=g++-14 -std=c++0x -DCOMP='"GNU C++ Compiler"'
+LLVM=g++-14 -DCOMP='"LLVM C++ Compiler"'
 PCC=pathCC -DCOMP='"Pathscale C++ Compiler"'
 IBM=bgxlc++ -DCOMP='"IBM XLC++ Compiler"'
 MPICC=mpicxx -DMPICF
